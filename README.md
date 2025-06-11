@@ -58,13 +58,14 @@ npx drizzle-kit migrate
 
 ## 📘 Endpoints (examples)
 
-| Method | Route              | Description                      |
-|--------|--------------------|----------------------------------|
-| GET    | `/items`           | List all financial items         |
-| POST   | `/items`           | Create a new item (Zod-validated)|
-| GET    | `/category/:id`    | List items by category ID        |
-
-> More endpoints in progress...
+| Method | Route                         | Description                              |
+|--------|-------------------------------|------------------------------------------|
+| GET    | `/items/month/:year/:month`   | Get items by year and month              |
+| GET    | `/items/:id`                  | Get a single item by ID                  |
+| GET    | `/items/category/:category`   | Get items by category                    |
+| POST   | `/items`                      | Create a new item (Zod-validated)        |
+| PATCH  | `/items/:id`                  | Update a specific item (partial update)  |
+| DELETE | `/items/:id`                  | Delete an item by ID                     |
 
 ---
 
